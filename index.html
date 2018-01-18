@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="css/bootstrap.css"  rel="stylesheet">
+		<style>
+		video{
+			width:100%; 
+			height:300px;
+			top: -133px;
+			width: 100%;
+			position:relative;
+		}
+		#messagebox{
+			position: relative;
+			top: 328px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="col-sm-9 col-sm-offset-2 col-md-10 col-md-offset-2">
+
+			<h3 class="page-header">Video Conference</h3>
+			
+			<div class="row">
+				<div class="col-md-2">
+				
+					<label class="col-md-12">Your ID</label>
+					<div class="col-md-12">
+						<textarea id="yourId" name="yourId"></textarea>
+						
+					</div>
+				</div>
+				<div class="col-md-3">
+					<label class="col-md-12">Other ID</label>
+					<div class="col-md-12">
+						<textarea id="otherId" name="otherId"></textarea>
+						
+					</div>
+				</div>
+				<div class="col-md-2">
+				<label class="col-md-12">&nbsp;</label>
+					<button id="connect" class="btn btn-success">Connect</button>
+				</div>
+			</div>
+			<hr>
+			<div id="messagebox">
+			<div class="row">
+				<div class="col-md-3">
+					<label class="col-md-12">Enter Message:</label>
+					<div class="col-md-12">
+						<textarea id="yourMessage" class="form-control"></textarea>
+						
+					</div>
+				</div>
+				<div class="col-md-2">
+					<label class="col-md-12">&nbsp;</label>
+					<button id="send" class="btn btn-warning">Send</button><br>
+					
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-3">
+				<div id="messages"></div>
+				</div>
+				
+			</div>
+			<hr>
+			</div>
+		</div>
+		<!--<label>Your id:</label><br>
+		<textarea id="yourId"></textarea><br>
+		<label>Other id:</label><br>
+		<textarea id="otherId"></textarea><br>
+		<button id="connect">Connect</button><br>
+		
+		
+		<label>Enter Message:</label><br>
+		<textarea id="yourMessage"></textarea><br>
+		
+		<button id="send">Send</button><br>
+		<pre id="messages"></pre>-->
+		
+		<script src="bundle.js" charset="utf-8"></script>
+	</body>
+</html>
